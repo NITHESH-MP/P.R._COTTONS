@@ -49,9 +49,9 @@ const Header = () => {
           
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-accent hover:bg-accent/90 text-white">
-              Request Quote
-            </Button>
+          <Link to="/admin/login">  <Button className="bg-accent hover:bg-accent/90 text-white">
+              Admin
+            </Button></Link>
           </div>
           
           {/* Mobile Menu Button */}
