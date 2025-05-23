@@ -6,21 +6,21 @@ import { Link } from 'react-router-dom';
 const slides = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1553340386-1cb0f5dc9e34?q=80&w=1920&auto=format&fit=crop',
+    image: '/Global.png',
     title: 'Premium Textile Exports from Karur, India',
     subtitle: 'Quality Woven Globally',
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1464287441781-6835e063c578?q=80&w=1920&auto=format&fit=crop',
-    title: 'Sustainable Fabrics',
+    image: '/hero.jpg',
+    title: 'Sustainable Fabric',
     subtitle: 'Eco-friendly Manufacturing',
   },
   {
     id: 3,
     image: 'https://images.unsplash.com/photo-1528822855841-e8bf3134cdc9?q=80&w=1920&auto=format&fit=crop',
     title: 'Handcrafted Excellence',
-    subtitle: '30+ Years of Heritage',
+    subtitle: '5 Years of Heritage',
   },
 ];
 

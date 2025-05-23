@@ -19,15 +19,14 @@ const colorSwatches = [
   { id: 'red', color: '#FF0000', name: 'Red' },
 ];
 
-// Sample category data
+//category data
 const categories = [
   { id: 'all', name: 'All Products' },
-  { id: 'Bed Linen', name: 'Bed Linen' },
-  { id: 'Bath Towels', name: 'Bath Towels' },
-  { id: 'Kitchen Textiles', name: 'Kitchen Textiles' },
-  { id: 'Curtains', name: 'Curtains' },
+  { id: 'Baby Swaddle', name: 'Baby Swaddle' },
+  { id: 'Beach Towels', name: 'Beach Towels' },
+  { id: 'Kitchen Towels', name: 'Kitchen Towels' },
+  { id: 'Bleach Resist Towels', name: 'Bleach Resist Towels' },
   { id: 'Table Linen', name: 'Table Linen' },
-  { id: 'Floor Coverings', name: 'Floor Coverings' },
 ];
 
 const ProductCard = ({ product }: { product: Product }) => {
@@ -157,12 +156,7 @@ const Products = () => {
       return false;
     }
     
-    // Filter by GSM - convert to number for comparison
-    const productGsm = Number(product.gsm);
-    if (!isNaN(productGsm) && (productGsm < gsmRange[0] || productGsm > gsmRange[1])) {
-      console.log('Filtered out by GSM:', productGsm, 'not in range', gsmRange);
-      return false;
-    }
+    
     
     // If there are selected colors, we'd filter by them here
     // For demo purposes, we'll just pass all products since we don't have color data per product
@@ -175,13 +169,7 @@ const Products = () => {
     setSearchParams({ category: categoryId });
   };
   
-  const toggleColor = (colorId: string) => {
-    setSelectedColors(prev => 
-      prev.includes(colorId) 
-        ? prev.filter(id => id !== colorId) 
-        : [...prev, colorId]
-    );
-  };
+  
 
   return (
     <MainLayout>
@@ -219,50 +207,8 @@ const Products = () => {
                     </button>
                   ))}
                 </div>
-              </div>
-              
-              <Separator />
-              
-              <div>
-                <h3 className="text-lg font-semibold mb-4">GSM Range</h3>
-                <div className="px-2">
-                  <Slider
-                    value={gsmRange}
-                    min={actualGsmRange[0]}
-                    max={actualGsmRange[1]}
-                    step={1}
-                    onValueChange={setGsmRange}
-                    className="mb-6"
-                  />
-                  <div className="flex justify-between text-sm">
-                    <span>{gsmRange[0]} GSM</span>
-                    <span>{gsmRange[1]} GSM</span>
-                  </div>
-                </div>
-              </div>
-              
-              <Separator />
-              
-              <div>
-                <h3 className="text-lg font-semibold mb-4">Colors</h3>
-                <div className="flex flex-wrap gap-2">
-                  {colorSwatches.map(swatch => (
-                    <button
-                      key={swatch.id}
-                      onClick={() => toggleColor(swatch.id)}
-                      className={cn(
-                        "w-8 h-8 rounded-full border-2 transition-all",
-                        selectedColors.includes(swatch.id)
-                          ? "border-accent scale-110"
-                          : "border-transparent hover:border-gray-300"
-                      )}
-                      style={{ backgroundColor: swatch.color }}
-                      title={swatch.name}
-                      aria-label={`Select ${swatch.name} color`}
-                    />
-                  ))}
-                </div>
-              </div>
+              </div>            
+            
             </div>
             
             {/* Products Grid */}

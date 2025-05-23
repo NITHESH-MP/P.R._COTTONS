@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-playfair mb-4">Karur Textiles</h3>
+            <h3 className="text-xl font-playfair mb-4">P.R.COTTONS</h3>
             <p className="text-sm mb-4 text-white/80">
-              Premium textile exports from Karur, India. Quality woven globally since 1990.
+              Premium textile exports from Karur, India. Quality woven globally since 2020.
             </p>
             <div className="flex space-x-3">
               <a href="#" className="text-white hover:text-accent">
@@ -52,23 +52,15 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold text-lg mb-4">Categories</h4>
+            <h4 className="font-semibold text-lg mb-4">Our Location</h4>
             <ul className="space-y-2 text-sm text-white/80">
-              <li>
-                <Link to="/products?category=bed-linen" className="hover:text-accent transition-colors">Bed Linen</Link>
-              </li>
-              <li>
-                <Link to="/products?category=towels" className="hover:text-accent transition-colors">Towels</Link>
-              </li>
-              <li>
-                <Link to="/products?category=curtains" className="hover:text-accent transition-colors">Curtains</Link>
-              </li>
-              <li>
-                <Link to="/products?category=kitchen-linen" className="hover:text-accent transition-colors">Kitchen Linen</Link>
-              </li>
-              <li>
-                <Link to="/products?category=table-linen" className="hover:text-accent transition-colors">Table Linen</Link>
-              </li>
+              <iframe
+              title="Google Map"
+              className="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.0178936820403!2d78.06514617485975!3d10.962020689198214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2f0028a069ab%3A0xbc625510d9394fc8!2sP.R.COTTONS!5e0!3m2!1sen!2sin!4v1740848549609!5m2!1sen!2sin" 
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </ul>
           </div>
           
@@ -77,7 +69,8 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-white/80">
               <p>
                 <span className="block font-medium">Address:</span>
-                123 Textile Park, Karur<br />
+                Ground Floor Room No.1, Door No.79/1<br />
+                Vaiyapurinagar, 1st Cross, Karur,<br/>
                 Tamil Nadu, India 639001
               </p>
               <p>
@@ -86,14 +79,14 @@ const Footer = () => {
               </p>
               <p>
                 <span className="block font-medium">Email:</span>
-                info@karurtextiles.com
+                prcottonsinfo@gmail.com
               </p>
             </div>
           </div>
         </div>
         
         <div className="mt-10 pt-6 border-t border-white/20 text-center text-sm text-white/60">
-          <p>© {new Date().getFullYear()} Karur Textiles. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} P.R.COTTONS. All rights reserved.</p>
         </div>
       </div>
     </footer>

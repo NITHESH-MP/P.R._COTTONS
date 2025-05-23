@@ -15,7 +15,7 @@ const IntroSection = () => {
             </h2>
             
             <p className="text-textGray text-lg">
-              Since 1990, Karur Textiles has been a trusted name in the textile export business, 
+              Since 2020, Karur Textiles has been a trusted name in the textile export business, 
               blending traditional craftsmanship with modern manufacturing techniques to create exceptional products.
             </p>
             
@@ -27,8 +27,8 @@ const IntroSection = () => {
                   </svg>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-charcoal">30+ Years Expertise</h3>
-                  <p className="text-textGray">Decades of experience and knowledge in textile manufacturing and exports.</p>
+                  <h3 className="text-lg font-semibold text-charcoal">5 Years Expertise</h3>
+                  <p className="text-textGray">Bunch of experience and knowledge in textile manufacturing and exports.</p>
                 </div>
               </div>
               
@@ -39,7 +39,7 @@ const IntroSection = () => {
                   </svg>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-charcoal">OEKO-TEX Certified</h3>
+                  <h3 className="text-lg font-semibold text-charcoal">Indiamart Certified</h3>
                   <p className="text-textGray">Our products meet international standards for safety and sustainability.</p>
                 </div>
               </div>
