@@ -87,7 +87,6 @@ const AdminLogin = () => {
           </Button>
           
           <div className="text-center text-sm text-muted-foreground mt-4">
-            <p>Demo credentials: admin@karurtextiles.com / admin123</p>
           </div>
         </form>
       </div>
