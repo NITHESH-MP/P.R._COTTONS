@@ -23,9 +23,9 @@ const colorSwatches = [
 const categories = [
   { id: 'all', name: 'All Products' },
   { id: 'Baby Swaddle', name: 'Baby Swaddle' },
-  { id: 'Beach Towels', name: 'Beach Towels' },
-  { id: 'Kitchen Towels', name: 'Kitchen Towels' },
-  { id: 'Bleach Resist Towels', name: 'Bleach Resist Towels' },
+  { id: 'Bath Towels', name: 'Beach Towels' },
+  { id: 'Kitchen Textiles', name: 'Kitchen Towels' },
+  { id: 'Curtains', name: 'Bleach Resist Towels' },
   { id: 'Table Linen', name: 'Table Linen' },
 ];
 
